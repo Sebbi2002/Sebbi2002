@@ -1,0 +1,14 @@
+{
+    "name": "SL Umrechner",
+    "short_name": "SL Umrechner",
+    "start_url": "./",
+    "display": "standalone",
+    "theme_color": "#ffffff",
+    "background_color":"#ffffff",
+    "icons": [
+      {
+        "src": "icon_sebbi_CoC.png",
+        "sizes": "500x500",
+        "type": "image/png"
+      }]
+  }
