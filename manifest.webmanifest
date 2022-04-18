@@ -7,8 +7,8 @@
     "background_color":"#ffffff",
     "icons": [
       {
-        "src": "icon_sebbi_CoC.png",
-        "sizes": "500x500",
+        "src": "Sebbi.png",
+        "sizes": "512x512",
         "type": "image/png"
       }]
   }

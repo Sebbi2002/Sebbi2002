@@ -14,17 +14,16 @@
         <p>Das Ergebnis lautet: </p><p id="Rechner"></p>
     </body>
     <script>
-        if('serviceWorker' in navigator) 
-            {
-            navigator.serviceWorker.register('sw.js');
-            };
         function calc()
         {
             ausgabe = document.getElementById("Rechner")
             input = document.getElementById("area")
             ausgabe.innerText = input.value *12
         }
+        if('serviceWorker' in navigator) 
+            {
+            navigator.serviceWorker.register('./sw.js')
+            .then(function() { console.log("Service worker registered"); });
+            };
     </script>
-
-
 </html>    
