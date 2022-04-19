@@ -15,6 +15,14 @@
         <input id="Grosse" type="text"/>
         <input onclick="calcGrosse()"type="submit"/>
         <p>Sie sind:  </p><p id="Rechner">Diamanten Wert</p>
+
+
+        <h1>Wie lange leben Sie mit ihrer Anzahl an Diamanten</h1>
+        <p>Geben Sie an wieviele Diamanten sie besitzen</p>
+        <input id="Leben" type="text"/>
+        <input onclick="calcLeben()"type="submit"/>
+        <p>Sie leben:  </p><p id="RechnerLeben"> Jahre lange</p>
+        
     </body>
     <script>
         function calc() 
@@ -32,6 +40,12 @@
             ausgabe = document.getElementById("Rechner")
             input = document.getElementById("Grosse") 
             ausgabe.innerText = input.value / 6
+        }
+        function calcLeben()
+        {
+            ausgabe = document.getElementById("RechnerLeben")
+            input = document.getElementById("Leben") 
+            ausgabe.innerText = input.value * 3
         }
 
         if('serviceWorker' in navigator) 
