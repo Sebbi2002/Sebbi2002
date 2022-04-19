@@ -10,11 +10,11 @@
         <h1>Wieviel Diamanten bist du Wert</h1>
         <p>Bitte Alter eingeben</p>
         <input id="Alter" type="text"/>
-
-        
-        
         <input onclick="calc()"type="submit"/>
-        <p>Sie sind:</p><p id="Rechner"><p> Diamanten Wert </p></p>
+        <p>Größe eingeben (in cm)</p>
+        <input id="Grosse" type="text"/>
+        <input onclick="calcGrosse()"type="submit"/>
+        <p>Sie sind:  </p><p id="Rechner">Diamanten Wert</p>
     </body>
     <script>
         function calc() 
@@ -24,9 +24,16 @@
           //  var Hight = document.getElementById("hight")
             ausgabe = document.getElementById("Rechner")
             input = document.getElementById("Alter") //+ document.getElementById("hight"))
-            
             ausgabe.innerText = input.value /3 //Age + Hight /4
         }
+        
+        function calcGrosse() 
+        {
+            ausgabe = document.getElementById("Rechner")
+            input = document.getElementById("Grosse") 
+            ausgabe.innerText = input.value / 6
+        }
+
         if('serviceWorker' in navigator) 
             {
             navigator.serviceWorker.register('./sw.js')
